@@ -1,12 +1,12 @@
-
-// import React from 'react'
+// eslint-disable-next-line no-unused-vars
+import React from 'react'
 
 export default function Right() {
     return (
         <div className="content">
             <div className="left">
                 <div className="profile-photo">
-                    <img src="p1.jpg" alt="Your Photo" />
+                    <img src="/p1.jpg" alt="Your Photo" />
                 </div>
             </div>
             <p>
