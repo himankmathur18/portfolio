@@ -1,6 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
-
+import React, { useEffect, useRef } from 'react'
 export default function Right() {
     return (
         <div className="content">
@@ -12,10 +11,11 @@ export default function Right() {
             <p>
                 I am Himank Mathur, currently pursuing a Bachelor of Computer Applications [(BCA)AIDS] from Poornima University.
                 I have a passion for working on dynamic and user-friendly projects.
-                My skill set includes python, HTML, CSS and various web development frameworks.
+                My skill set includes JAVA-SCRIPT, REACT and various web development frameworks.
                 I am eager to apply my knowledge and skills in a professional setting and contribute to innovative projects.
             </p>
         </div>
+
     )
 }
 
