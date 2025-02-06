@@ -9,9 +9,9 @@ const Sidebar = () => {
     return (
         <div className={`sidebar ${isSidebarVisible ? 'show' : ''}`}>
             {/* Sidebar */}
-            <button className="close-btn" onClick={toggleSidebar}><i className="fa-solid fa-share"></i></button>
+            <button className="close-btn" onClick={toggleSidebar}>Social</button>
             {
-                !isSidebarVisible && (
+                isSidebarVisible && (
                     <button className="open-btn" onClick={toggleSidebar}>&#9776;
                         <div className="social-icons">
                             <a href="https://www.linkedin.com/in/himank-mathur-26b63a261/"><i className="fab fa-linkedin-in"></i></a>
@@ -21,7 +21,6 @@ const Sidebar = () => {
                     </button>
                 )
             }
-
         </div >
     );
 };
