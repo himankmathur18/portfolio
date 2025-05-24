@@ -1,21 +1,19 @@
 import './App.css'
+import About from './Components/About'
+import Education from './Components/Education'
 import Header from './Components/Header'
-import Right from './Components/Right'
-import Frontend from './Components/Frontend'
-import Tools from './Components/Tools'
-import Sidebar from './Components/Sidebar'
-import Backend from './Components/Backend'
-
+import Projects from './Components/Project'
+import Skills from './Components/Skills'
+import Footer from './Components/Footer'
 function App() {
   return (
     <>
-      <Header />
-      <Right />
-      <Sidebar/>
-      <Frontend />
-      <Backend/>
-      <Tools />
-      <script src="Portfolio.js"></script>
+     <Header/>
+     <About/>
+     <Skills/>
+     <Education/>
+     <Projects/>
+     <Footer/>
     </>
   )
 }
