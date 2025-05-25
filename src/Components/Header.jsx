@@ -1,12 +1,18 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+
 function Header(){
-  const navigate =useNavigate;
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
+
+  const scrollTo = (id) => {
+    const element = document.getElementById(id);
+    if (element){
+      element.scrollIntoView({ behavior: 'smooth'});
+    }
+  }
 
   return (
     <div className='z-50'>
@@ -24,10 +30,10 @@ function Header(){
           </button>
         </div>
         <div className="hidden md:flex text-white">
-          <button className='m-3 hover:underline font-bold cursor-pointer' onClick={() => navigate('/about')}>About</button>
-          <button className='m-3 hover:underline font-bold cursor-pointer' onClick={() => navigate('/contact')}>Skills</button>
-          <button className='m-3 hover:underline font-bold cursor-pointer' onClick={() => navigate('/contact')}>Education</button>
-          <button className='m-3 hover:underline font-bold cursor-pointer' onClick={() => navigate('/project')}>Project</button>
+          <button className='m-3 hover:underline font-bold cursor-pointer' onClick={() => scrollTo('about')}>About</button>
+          <button className='m-3 hover:underline font-bold cursor-pointer' onClick={() => scrollTo('skills')}>Skills</button>
+          <button className='m-3 hover:underline font-bold cursor-pointer' onClick={() => scrollTo('education')}>Education</button>
+          <button className='m-3 hover:underline font-bold cursor-pointer' onClick={() => scrollTo('project')}>Project</button>
         </div>
       </nav>
       <div className={`md:hidden fixed top-0 right-0 h-full w-64 bg-gray-800 text-white shadow-lg transform transition-transform duration-300 ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'} z-50`}>
@@ -37,10 +43,10 @@ function Header(){
           </svg>
         </button>
         <nav className="mt-16">
-          <button className='block w-full text-left p-3 hover:bg-gray-700' onClick={() => { navigate('/about'); toggleSidebar(); }}>About</button>
-          <button className='block w-full text-left p-3 hover:bg-gray-700' onClick={() => { navigate('/contact'); toggleSidebar(); }}>Skills</button>
-          <button className='block w-full text-left p-3 hover:bg-gray-700' onClick={() => { navigate('/contact'); toggleSidebar(); }}>Education</button>
-          <button className='block w-full text-left p-3 hover:bg-gray-700' onClick={() => { navigate('/project'); toggleSidebar(); }}>Project</button>
+          <button className='block w-full text-left p-3 hover:bg-gray-700' onClick={() => { scrollTo('about'); toggleSidebar(); }}>About</button>
+          <button className='block w-full text-left p-3 hover:bg-gray-700' onClick={() => { scrollTo('skills'); toggleSidebar(); }}>Skills</button>
+          <button className='block w-full text-left p-3 hover:bg-gray-700' onClick={() => { scrollTo('education'); toggleSidebar(); }}>Education</button>
+          <button className='block w-full text-left p-3 hover:bg-gray-700' onClick={() => { scrollTo('project'); toggleSidebar(); }}>Project</button>
         </nav>
       </div>
     </div>

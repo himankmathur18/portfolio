@@ -6,7 +6,6 @@ function Experience() {
       title: 'Software Developer',
       company: 'Deeporion Technology Pvt. Ltd.',
       duration: '2025',
-      description: 'It is internship program in witch i learn How we can work with js, react, tailwind.',
     },
 
   ];
@@ -20,7 +19,7 @@ function Experience() {
               <h3 className="text-xl font-semibold">{exp.title}</h3>
               <h4 className="text-lg text-gray-600">{exp.company}</h4>
               <p className="text-gray-500 mb-2">{exp.duration}</p>
-              <p className="text-gray-700">{exp.description}</p>
+            
             </div>
           ))}
         </div>

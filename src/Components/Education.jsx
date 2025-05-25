@@ -3,7 +3,7 @@
 function Education() {
   const educationData = [
     {
-      degree: "Bachelor of Science in Computer Science",
+      degree: "Bachelor of Computer Applications",
       institution: "Poornima University",
       year: "2022-2025",
     },

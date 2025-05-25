@@ -2,7 +2,7 @@
 
 const Skills = () => {
   const skills = {
-    Frontend: ['JavaScript', 'React', 'CSS', 'Tailwind CSS', 'HTML'],
+    Frontend: ['HTML', 'CSS', 'Tailwind CSS', 'JavaScript', 'React'],
     Tools: ['Git Control'],
   };
 
