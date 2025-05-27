@@ -20,7 +20,7 @@ const Projects = () => {
   ];
 
   return (
-    <section className="py-10 min-h-[80vh]">
+    <section id="project" className="py-10 min-h-[80vh]">
       <h2 className="text-3xl font-bold text-white bg-blue-950 border-b-1 p-4 ">Projects</h2>
       <div className="max-w-7xl  mx-auto grid grid-cols-1 md:grid-cols-2 ">
         {projectList.map((project, index) => (

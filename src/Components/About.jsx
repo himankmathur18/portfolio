@@ -6,8 +6,8 @@ const About = () => {
   };
 
   return (
-    <section className="py-20 md:py-20 h-auto">
-      <div className="container mx-auto px-4">
+    <section id="about" className="py-20 md:py-20 h-auto">
+      <div className="container mx-auto px-4 mt-[6rem]">
         <div className="flex flex-col md:flex-row items-center md:items-start">
           <div className="flex flex-col items-center md:items-start w-full md:w-[60rem]">
             <h2 className="text-3xl md:text-4xl font-bold md:mb-0 ">
