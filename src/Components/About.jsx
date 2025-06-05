@@ -1,5 +1,4 @@
 // import React from 'react';
-import { TiArrowDownThick } from "react-icons/ti";
 const About = () => {
   const openResume = () => {
     window.open("/Himank Mathur Resume.pdf", "_blank");
@@ -43,9 +42,7 @@ const About = () => {
             />
           </div>
         </div>
-        <div className="text-4xl border-2 w-10 cursor-pointer top-auto rounded-lg">
-          <TiArrowDownThick/>
-        </div>
+        
       </div>
     </section>
   );
