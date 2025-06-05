@@ -7,15 +7,25 @@ const Skills = () => {
   };
 
   return (
-    <section id="skills" className="py-10">
-      <h2 className="text-3xl font-bold text-white bg-blue-950 border-b-1 p-4">Skills</h2>
+    <section id="skills" className="py-6 min-h-screen">
+      <h2 className="text-2xl sm:text-3xl font-bold text-white bg-blue-950 border-b-1 p-3 sm:p-4 mt-4 sm:mt-[1.5em] text-center">
+        Skills
+      </h2>
       {Object.entries(skills).map(([category, skillList]) => (
-        <div key={category} className="m-10">
-          <h3 className="text-2xl font-semibold text-center mb-4">{category}</h3>
-          <div className="flex flex-wrap justify-center">
+        <div
+          key={category}
+          className="mx-2 sm:mx-8 my-6 sm:my-[4em]"
+        >
+          <h3 className="text-lg sm:text-2xl font-semibold text-center mb-3 sm:mb-4">
+            {category}
+          </h3>
+          <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
             {skillList.map((skill, index) => (
-              <div key={index} className="m-4 p-4 border rounded shadow-lg">
-                <h4 className="text-xl font-semibold">{skill}</h4>
+              <div
+                key={index}
+                className="w-full xs:w-40 sm:w-48 m-0 p-3 sm:p-4 border rounded shadow-lg text-center bg-white"
+              >
+                <h4 className="text-base sm:text-xl font-semibold text-gray-800">{skill}</h4>
               </div>
             ))}
           </div>

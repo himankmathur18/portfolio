@@ -11,8 +11,8 @@ function Experience() {
   ];
 
   return (
-    <section id="experience" className="py-10 min-h-[50vh]">
-        <h2 className="text-3xl font-bold text-white bg-blue-950 border-b-1 p-4">Experience</h2>
+    <section id="experience" className="py-10 h-screen">
+        <h2 className="text-3xl font-bold text-white bg-blue-950 border-b-1 p-4 mt-[1.5em]">Experience</h2>
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2">
           {experiences.map((exp, index) => (
             <div key={index} className="bg-white rounded-lg shadow-md p-4 m-10 hover:p-5 duration-300">

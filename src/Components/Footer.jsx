@@ -2,7 +2,7 @@
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-4">
+    <footer className="bg-gray-800 text-white py-4 mt-4">
       <div className="container mx-auto text-center">
         <p>&copy; {new Date().getFullYear()} Himank Mathur.</p>
         <div className="flex justify-center space-x-4 mt-2">

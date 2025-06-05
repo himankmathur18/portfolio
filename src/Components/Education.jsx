@@ -20,14 +20,19 @@ function Education() {
   ];
 
   return (
-    <section id="education" className="py-10 min-h-[70vh]">
-      <h2 className="text-3xl font-bold text-white bg-blue-950 border-b-1 p-4">Education</h2>
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2">
+    <section id="education" className="py-6 min-h-screen ">
+      <h2 className="text-3xl font-bold text-white bg-blue-950 border-b-1 p-4 mt-[1.5em]">
+        Education
+      </h2>
+      <div className="max-w-2xl mx-auto grid grid-cols-1 gap-4 px-2 xs:px-4">
         {educationData.map((edu, index) => (
-          <div key={index} className="bg-white rounded-lg shadow-md p-4 m-10 hover:p-5 duration-300">
-            <h3 className="text-xl font-semibold">{edu.degree}</h3>
-            <p className="text-gray-600">{edu.institution}</p>
-            <p className="text-gray-500">{edu.year}</p>
+          <div
+            key={index}
+            className="bg-white rounded-lg shadow-md p-3 xs:p-4 m-3 xs:m-5 hover:p-4 xs:hover:p-5 duration-300"
+          >
+            <h3 className="text-base xs:text-lg sm:text-xl font-semibold">{edu.degree}</h3>
+            <p className="text-gray-600 text-sm xs:text-base">{edu.institution}</p>
+            <p className="text-gray-500 text-xs xs:text-sm">{edu.year}</p>
           </div>
         ))}
       </div>

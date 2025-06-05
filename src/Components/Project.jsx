@@ -1,40 +1,52 @@
-// import React from 'react';
-
-const Projects = () => {
+const Project = () => {
   const projectList = [
     {
-      title: 'Spotify Clone',
-      description: 'Description of project one.',
-      link: '#'
+      title: "Spotify Clone",
+      image: "p2.jpg",
+      link: "#",
     },
     {
-      title: 'M2 Connect',
-      description: 'Description of project two.',
-      link: '#'
+      title: "M2 Connect",
+      image: "p3.jpg",
+      link: "https://github.com/himankmathur18/M2-Connect",
     },
     {
-      title: 'To-Do List',
-      description: 'Description of project three.',
-      link: '#'
-    }
+      title: "To-Do List",
+      image: "p4.jpg",
+      link: "#",
+    },
   ];
 
   return (
-    <section id="project" className="py-10 min-h-[80vh]">
-      <h2 className="text-3xl font-bold text-white bg-blue-950 border-b-1 p-4 ">Projects</h2>
-      <div className="max-w-7xl  mx-auto grid grid-cols-1 md:grid-cols-2 ">
-        {projectList.map((project, index) => (
-          <div key={index} className="bg-white rounded-lg shadow-md p-4 m-10 hover:p-5 duration-300">
-            <h3 className="text-xl font-semibold">{project.title}</h3>
-            <p className="mt-2">{project.technology}</p>
-            <a href={project.link} className="text-blue-500 hover:underline mt-4 block">
-              View Project
-            </a>
-          </div>
-        ))}
-      </div>
+    <section id="project" className="py-10 ">
+      <h2 className="text-3xl font-bold text-white mt-11 bg-blue-950 border-b-1 p-4 ">
+        Projects
+      </h2>
+
+<div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 px-2">
+  {projectList.map((project, idx) => (
+    <div
+      key={idx}
+      className="rounded-lg bg-white/10 p-4 flex flex-col items-center shadow-md"
+    >
+      <h3 className="text-lg md:text-xl font-semibold mb-2 text-center">{project.title}</h3>
+      <img
+        src={project.image}
+        alt={project.title}
+        className="w-full h-40 md:h-64 object-cover rounded-2xl mb-4"
+      />
+      <a
+        href={project.link}
+        className="text-blue-500 hover:underline border-2 p-2 rounded-2xl w-full text-center"
+      >
+        View Project
+      </a>
+    </div>
+  ))}
+</div>
+
     </section>
   );
 };
 
-export default Projects;
+export default Project;
