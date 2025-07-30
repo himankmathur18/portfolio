@@ -27,7 +27,7 @@ function Hero() {
     <>
       <section
         id="hero"
-        className="min-h-screen flex items-center justify-center relative overflow-hidden"
+        className="min-h-screen flex items-center justify-center relative overflow-hidden py-20"
       >
         {/* Animated Background */}
         <div className="absolute inset-0 overflow-hidden">
@@ -96,10 +96,10 @@ function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4"
+            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 max-sm:text-[33px]"
           >
             Hi, I'm{" "}
-            <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent max-sm:text-[33px]">
               Himank Mathur
             </span>
           </motion.h1>
@@ -108,7 +108,7 @@ function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
-            className="text-xl sm:text-2xl lg:text-3xl text-white/80 mb-8 h-12 flex items-center justify-center"
+            className="text-xl sm:text-2xl lg:text-3xl text-white/80 mb-8 h-12 flex items-center justify-center max-sm:mb-3"
           >
             <span className="font-mono">
               {displayText}
@@ -152,12 +152,14 @@ function Hero() {
             <div className="flex space-x-4">
               {[
                 { icon: FaGithub, href: "https://github.com/himankmathur18", label: "GitHub" },
-                { icon: FaLinkedin, href: "https://www.linkedin.com/in/himank-mathur-830168376/", label: "LinkedIn" },
+                { icon: FaLinkedin, href: "https://www.linkedin.com/in/himank-mathur-26b63a261/", label: "LinkedIn" },
                 { icon: IoIosMail, href: "mailto:himankmathur6@gmail.com", label: "Email" },
               ].map((social, index) => (
                 <motion.a
                   key={social.label}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.2, y: -2 }}
                   whileTap={{ scale: 0.9 }}
                   initial={{ opacity: 0, y: 20 }}

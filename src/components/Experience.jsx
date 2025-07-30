@@ -16,7 +16,7 @@ function Experience() {
       title: "Full Stack Developer",
       company: "White Cinette",
       location: "Jaipur Rajasthan",
-      duration: "2025 - Present",
+      duration: "Jun-2025 to Present",
       technologies: ["React", "Node.js", "Express", "Git control"],
       description: ["Developed responsive web applications"], // Updated to empty array or add actual descriptions
     },

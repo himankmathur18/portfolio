@@ -20,6 +20,7 @@ function Skills() {
         { name: "JavaScript", icons: TbBrandJavascript, color: "from-blue-500 to-cyan-500" },
         { name: "React", icons: FaReact, color: "from-blue-500 to-cyan-500" },
         { name: "Tailwind CSS", icons: RiTailwindCssFill, color: "from-teal-500 to-cyan-500" },
+        { name: "SCSS", icons: RiTailwindCssFill, color: "from-teal-500 to-cyan-500" },
       ],
     },
     {
@@ -27,6 +28,7 @@ function Skills() {
       icon: FaDatabase,
       skills: [
         { name: "Node.js", icons: FaNodeJs, color: "from-green-600 to-green-400" },
+        { name: "Express.js", icons: FaNodeJs, color: "from-green-600 to-green-400" },
         { name: "MongoDB", icons: SiMongodb, color: "from-green-600 to-green-400" },
       ],
     },
@@ -126,7 +128,7 @@ function Skills() {
           ))}
         </motion.div>
 
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -149,7 +151,7 @@ function Skills() {
               </motion.span>
             ))}
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
